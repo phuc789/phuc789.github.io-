@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	html,body,.to,.slider{position: absolute;margin: 0;width: 100%;height: 100%;}
+
+.slider {transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.to {
+    overflow: hidden;
+    position: relative;
+}
+	li{}
+	.nut{text-align:center}
+	.nut ul{padding:0;margin:0;display:inline;list-style:none}
+	ul{}
+	.nut ul li{cursor:pointer;border:1px solid;display:inline-block;text-indent:-9999px;border-radius:50%;width: 20px;margin:7px;padding: 0px;height:20px;}
+	.nut ul li:hover{background:#342f2f}
+	.active{background: black}
+	.slider1,.slider2,.slider3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.slider1{background-image: url(https://photo2.tinhte.vn/data/attachment-files/2015/07/3096222_baltic_sea-wallpaper-1920x1080.jpg);}
+.slider2{background-image: url(http://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-full-hd-1080-phong-canh-thien-nhien-dep_022858636.jpg);}
+.slider3{background-image: url(http://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-full-hd-1080-thung-lung-ngay-nang-dep_022859759.jpg);}
+.bentrai1{
+    z-index: 2;
+    left: -97%;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: black;
+    opacity: .2;
+    transform: rotate(45deg);
+    top: 0;
+     transform: translateX(-100%);
+}
+.bentrai2{
+    background: black;
+    z-index: 3;
+    width: 200%;
+    height: 200%;
+    transform: rotate(45deg);
+    opacity: .2;
+    left: -112%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+.benphai1{
+	 transform: translateX(100%);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transform: rotate(45deg);
+    right: -78%;
+    top: -17%;
+    opacity: .2;
+}
+.noidung{opacity: 0;
+    color: white;
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    bottom: 10%;
+}
+.to .active2{opacity: 1; visibility: visible;}
+.active2  .active3{animation: active3 5s forwards ease-in-out ;}
+.active2  .active3_1{animation: active3 4s forwards ease-in-out ;}
+.active2  .active4{animation: active4 5s forwards ease-in-out ;}
+.active2  .delay{animation-delay: .5s;}
+
+.active2  .active5{animation: active5 1.5s forwards  ;}
+.active2  .delay2{animation-delay: 2s;}
+@keyframes active3{
+	0%{transform: translateX(-100%) rotate(45deg);}
+	40%,60%{transform: translateX(0%) rotate(45deg);}
+	100%{transform: translateX(-100%) rotate(45deg);}
+}
+@keyframes active4{
+	0%{transform: translateX(100%) rotate(45deg);}
+	40%,60%{transform: translateX(0%) rotate(45deg);}
+	100%{transform: translateX(100%) rotate(45deg);}
+}
+@keyframes active5{
+	0%{transform: translateX(0%); opacity:0;}
+	40%,70%{transform: translateX(0%); opacity:1;}
+	100%{transform: translateX(-100%) ;opacity: 0}
+}
+</style>
+<body>
+	<div class="to">
+		<div class="slider active2">
+			<div class="slider1">
+				<div class="bentrai1 active3"></div>
+				<div class="bentrai2 active3_1 delay"></div>
+				<div class="benphai1 active4"></div>
+				<div class="noidung active5 delay2">rường của ông đã truyền cảm ba quân chiến đấu và thắng trận lừng danh này. Với liên tiếp hai đợt tấn công của quân Pháp bị phá tan mà quân Anh chỉ có chút ít thương vong, trận Agincourt  </div>
+			</div>
+			
+		</div><!--  ket thuc -->
+		<div class="slider">
+			<div class="slider2">
+				<div class="bentrai1 active3"></div>
+				<div class="bentrai2 active3_1 delay"></div>
+				<div class="benphai1 active4"></div>
+				<div class="noidung active5 delay2">rận chiến diễn ra vào ngày thứ sáu 25 tháng 10 năm 1415 tại một địa điểm gần Azincourt ngày nay, thuộc miền Bắc Pháp. Đây là một toàn thắng của vua Henry V nước Anh và có ý nghĩa như một đòn giáng sấm sét của ông vào quân Pháp, bất chấp ưu thế to lớn về quân số của Pháp (gấp 6 lầnng của ông đã truyền cảm ba quân chiến đấu và thắng trận lừng danh này. Với liên tiếp hai đợt tấn công của quân Pháp bị phá tan mourt  </div>
+			</div>
+			
+		</div><!--  ket thuc -->
+		<div class="slider">
+			<div class="slider3">
+				<div class="bentrai1 active3"></div>
+				<div class="bentrai2 active3_1 delay"></div>
+				<div class="benphai1 active4"></div>
+				<div class="noidung active5 delay2">ủa Pháp (gấp 6 lần). Không những gặp may mắn, mà lòng can trường của ông đã truyền cảm ba quân chiến đấu và thắng trận lừng danh này. Với liên tiếp hai đợt tấn công của quân Pháp bị phá tan mà quân Anh chỉ có chút ít thương vong, trận Agincourt  </div>
+			</div>
+			
+		</div><!--  ket thuc -->
+	</div>
+	<div class="nut">
+		<ul>
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+	  	var nut = document.querySelectorAll('.nut ul li');
+	  	var slider = document.querySelectorAll('.slider');
+	  	for (var i = 0; i < nut.length; i++) {
+	  		nut[i].onclick = function(){
+		  		for (var i = 0; i < nut.length; i++) {
+		  			nut[i].classList.remove('active');
+		  		}
+		  		this.classList.add('active');
+		  		var vitrihientai = this;
+		  		for (var vitri = 0; vitrihientai = vitrihientai.previousElementSibling ; vitri++) {}
+		  		for (var i = 0; i < slider.length; i++) {
+		  			slider[i].classList.remove('active2');
+		  		}
+		  		slider[vitri].classList.add('active2');
+		  	}
+	  	}
+	  	autoslider();
+	  	function autoslider(){
+	  		var time = setInterval(function(){
+	  			var slider2 = document.querySelector('.to .slider.active2');
+	  			for (var vitri2 = 0; slider2 = slider2.previousElementSibling; vitri2++) {	  			}
+	  				if (vitri2 < (slider.length-1)) {
+	  					for (var i = 0; i < slider.length; i++) {
+	  						slider[i].classList.remove('active2');
+	  						nut[i].classList.remove('active');
+			  			}
+			  			slider[vitri2].nextElementSibling.classList.add('active2');
+			  			nut[vitri2].nextElementSibling.classList.add('active');
+	  				}else{
+	  					for (var i = 0; i < slider.length; i++) {
+	  						slider[i].classList.remove('active2');
+	  						nut[i].classList.remove('active');
+			  			}
+			  			slider[0].classList.add('active2');
+			  			nut[0].classList.add('active');
+
+	  				}
+	  			
+	  		},5000)
+	  	}
+	  	
+	},false);
+	</script>
+</body>
+</html>
